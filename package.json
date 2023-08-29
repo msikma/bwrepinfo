@@ -1,0 +1,30 @@
+{
+  "name": "bwrepinfo",
+  "version": "1.0.0",
+  "description": "Parses StarCraft: Remastered replay files and returns human-readable information",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/",
+    "util/",
+    "index.js",
+    "package.json",
+    "license.md",
+    "readme.md"
+  ],
+  "keywords": [
+    "StarCraft"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "format-duration": "^3.0.2",
+    "lodash.orderby": "^4.6.0",
+    "pretty-bytes": "^6.1.1",
+    "screparsed": "^0.0.4",
+    "sctoolsdata": "^0.1.5"
+  }
+}
