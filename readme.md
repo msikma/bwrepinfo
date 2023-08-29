@@ -4,6 +4,8 @@
 
 Utility that uses [evanandrewrose/screpparsed](https://github.com/evanandrewrose/screparsed) to parse StarCraft: Remastered replay files, and then formats the raw data into human-readable information for easy display.
 
+This utility is designed to be used in conjunction with the [Discord](https://discord.com/) API.
+
 ## License
 
 MIT license.
