@@ -67,7 +67,7 @@ export function formatDynamicTimestamp(date, type) {
  * Formats a filesize from bytes into a human readable string.
  */
 export function formatFilesize(bytes) {
-  return prettyBytes(bytes, {})
+  return prettyBytes(bytes, {binary: true})
 }
 
 /**
