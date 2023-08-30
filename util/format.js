@@ -13,6 +13,43 @@ export function formatMessageTime(timeMs, leadingSpace = false) {
 }
 
 /**
+ * Returns a clock emoji for a given date.
+ */
+export function formatDateClockEmoji(date) {
+  const clockEmoji = {
+    '1': '🕐',
+    '2': '🕑',
+    '3': '🕒',
+    '4': '🕓',
+    '5': '🕔',
+    '6': '🕕',
+    '7': '🕖',
+    '8': '🕗',
+    '9': '🕘',
+    '10': '🕙',
+    '11': '🕚',
+    '12': '🕛',
+    '130': '🕜',
+    '230': '🕝',
+    '330': '🕞',
+    '430': '🕟',
+    '530': '🕠',
+    '630': '🕡',
+    '730': '🕢',
+    '830': '🕣',
+    '930': '🕤',
+    '1030': '🕥',
+    '1130': '🕦',
+    '1230': '🕧'
+  }
+  const hours = date.getUTCHours() % 12
+  const minutes = date.getUTCMinutes()
+  const thirty = minutes >= 30
+  const key = `${hours === 0 ? '12' : hours}${thirty ? '30' : ''}`
+  return clockEmoji[key]
+}
+
+/**
  * Formats the duration of the game.
  */
 export function formatGameDuration(durationMs) {
