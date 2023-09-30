@@ -1,6 +1,6 @@
 {
   "name": "bwrepinfo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parses StarCraft: Remastered replay files and returns human-readable information",
   "main": "index.js",
   "type": "module",
@@ -24,7 +24,7 @@
     "format-duration": "^3.0.2",
     "lodash.orderby": "^4.6.0",
     "pretty-bytes": "^6.1.1",
-    "screparsed": "^0.0.4",
+    "screparsed": "^0.0.5",
     "sctoolsdata": "^0.1.5"
   }
 }
