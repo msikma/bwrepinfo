@@ -96,7 +96,7 @@ export function escapeInsideBlock(str) {
   return str
     .replace(/\*/g, '∗')
     .replace(/\|/g, 'ǀ')
-    .replace(/_/g, '_')
+    .replace(/_/g, '⎽')
     .replace(/`/g, ' ̀')
     .replace(/~/g, '∼')
 }
