@@ -1,5 +1,5 @@
 {
-  "name": "bwrepinfo",
+  "name": "@dada78641/bwrepinfo",
   "version": "1.1.0",
   "description": "Parses StarCraft: Remastered replay files and returns human-readable information",
   "main": "index.js",
