@@ -15,6 +15,9 @@
     "license.md",
     "readme.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "StarCraft"
   ],
