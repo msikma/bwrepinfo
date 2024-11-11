@@ -83,3 +83,20 @@ export function wrapSpoiler(str) {
 export function wrapCodeBlock(str, type = '') {
   return `\`\`\`${type}\n${str}\n\`\`\``
 }
+
+/**
+ * Escapes a string inside of a code or link block.
+ * 
+ * We can't properly escape values inside of ``` or []() code fragments,
+ * so instead we replace control characters with lookalikes.
+ * 
+ * This only applies to Markdown styles that are *not* at the start of a newline.
+ */
+export function escapeInsideBlock(str) {
+  return str
+    .replace(/\*/g, '∗')
+    .replace(/|/g, 'ǀ')
+    .replace(/_/g, '_')
+    .replace(/`/g, ' ̀')
+    .replace(/~/g, '∼')
+}

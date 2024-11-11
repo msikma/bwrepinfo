@@ -1,6 +1,6 @@
 {
   "name": "bwrepinfo",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Parses StarCraft: Remastered replay files and returns human-readable information",
   "main": "index.js",
   "type": "module",
