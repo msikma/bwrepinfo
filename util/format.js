@@ -95,7 +95,7 @@ export function wrapCodeBlock(str, type = '') {
 export function escapeInsideBlock(str) {
   return str
     .replace(/\*/g, '∗')
-    .replace(/|/g, 'ǀ')
+    .replace(/\|/g, 'ǀ')
     .replace(/_/g, '_')
     .replace(/`/g, ' ̀')
     .replace(/~/g, '∼')
